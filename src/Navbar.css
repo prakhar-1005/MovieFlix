@@ -1,0 +1,35 @@
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;                     /**/
+    justify-content: space-between;  /**/
+    align-items: center;
+    height: 62px;
+    z-index: 1;  /**/
+
+   /*Animations - (useful in navar_dark class) */
+    transition-timing-function:ease-in ;
+    transition: all 0.5s;
+    
+}
+
+.nav_logo{
+    display: fixed;
+    width: 140px;
+    object-fit: contain;
+    cursor: pointer;
+
+}
+
+.nav_avatar{
+    display: fixed;
+    width: 50px;
+    cursor: pointer;
+    padding-right: 15px;
+    object-fit: contain;
+}
+
+.nav_dark{
+    background-color: #111;
+}

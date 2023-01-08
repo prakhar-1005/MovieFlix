@@ -1,0 +1,31 @@
+.row_posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;  /*to prevent cropping of images when hovered over*/
+}
+
+.row{
+    margin-left: 20px;
+    color: white;
+}
+.row_posters::-webkit-scrollbar{  /*to hide scrollbar*/
+    display: none;
+}  
+
+
+.row_poster{
+    object-fit: contain;  /*sets how the content of a replaced element such as an <img> or <video> should be resized to fit its container*/
+    width: 100%;  /*so that all the images take 100 % of width of screen, will be important for smaller images */
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;  /* when size changes (used while hovering)*/
+}
+
+.row_poster:hover{
+transform: scale(1.08);
+}
+
+.row_posterLarge{
+    max-height: 250px;
+}
